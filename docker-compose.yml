@@ -1,1 +1,26 @@
-version: "3.8"\nservices:\n  frontend:\n    build: ./frontend\n    ports:\n      - "5173:5173"\n    environment:\n      - VITE_BACKEND_URL=http://localhost:5000\n    depends_on:\n      - backend\n  backend:\n    build: ./backend\n    ports:\n      - "5000:5000"\n    environment:\n      - MONGODB_URI=\n      - JWT_SECRET=\n      - GOOGLE_CLIENT_ID=\n      - GOOGLE_CLIENT_SECRET=\n      - EMAIL_USER=\n      - EMAIL_PASS=\n      - CLOUDINARY_URL=\n      - S3_BUCKET=\n      - SENDGRID_API_KEY=\n      - FRONTEND_URL=http://localhost:5173\n      - BACKEND_URL=http://localhost:5000
+version: "3.8"
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_BACKEND_URL=http://localhost:5000
+    depends_on:
+      - backend
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGODB_URI=
+      - JWT_SECRET=
+      - GOOGLE_CLIENT_ID=
+      - GOOGLE_CLIENT_SECRET=
+      - EMAIL_USER=
+      - EMAIL_PASS=
+      - CLOUDINARY_URL=
+      - S3_BUCKET=
+      - SENDGRID_API_KEY=
+      - FRONTEND_URL=http://localhost:5173
+      - BACKEND_URL=http://localhost:5000
