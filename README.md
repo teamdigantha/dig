@@ -1,2 +1,1 @@
-# dig
-building a full stack web app
+# Diganta — Turn college event chaos into seamless flow.\n\nFrom poster approvals to budget reconciliation — everything your campus event needs, in one place.\n\n## Features\n- Fast approvals\n- Transparent budgets\n- Single source of truth\n- Reusable event templates\n\n## Getting Started\n\nSee frontend/ and backend/ for setup instructions.\n\n## CTA\n- Request Beta Access\n- See Demo
